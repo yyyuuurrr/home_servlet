@@ -39,13 +39,7 @@
 
 	<!-- 3번 -->
 	<% 
-		pubilc int sum2(int number){
-			int sum1 = 0;
-			for(int i = 1; i <= 50; i++){
-				sum += i;
-			}
-			return sum;		
-		}
+
 
 	%>
 	<h3>1에서 50까지의 합은 <%= sum %>입니다.</h3>
