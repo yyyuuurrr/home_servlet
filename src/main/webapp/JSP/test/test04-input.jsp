@@ -15,7 +15,7 @@
 		<select name="operator">
 			<option value="+">+</option>
 			<option value="-">-</option>
-			<option value="*">X</option>
+			<option value="*">x</option>
 		</select>
 		<input type="text" name="number2">
 		
