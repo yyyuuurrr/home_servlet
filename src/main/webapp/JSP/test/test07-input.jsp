@@ -8,20 +8,19 @@
 </head>
 <body>
 	
-	<div>
-
-		<h2>메뉴 검색</h2>
+	div class="container">
 		
-		<form method="get" action="/JSP/test/test07.jsp]">
-	
-		<div class="d-flex col-4 p-0">
-			<input type="text" name="menu">
-			<input type="checkbox" name="option"><label>4점 이하 제외</label> <br>
-		</div>
-		
+		<h1>메뉴 검색</h1>
+		<form method="get" action="/JSP/test/test07.jsp">
+			<div class="d-flex col-4 p-0">
+				<input type="text" class="form-control col-4" name="menu"> 
+				<label class="col-8"><input type="checkbox" name="option"> 4점이하 제외</label>
+			</div>
 			<button type="submit" class="btn btn-info">검색</button>
 		</form>
+		
 	</div>
+
 
 </body>
 </html>

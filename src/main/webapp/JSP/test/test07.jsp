@@ -36,8 +36,7 @@
 	    // option 값이 "on"이냐 null이냐
 		
 	%>
-	
-	<%= option %>
+
 	<div class="container">
 		<h2 class="text-center">검색 결과</h2>
 
@@ -56,6 +55,10 @@
 				if(menu.equals(store.get("menu"))) {
 					// option 값에 따라 tr태그 포함 여부 결정
 					double point = (Double)store.get("point");
+					// 옵션이 null 일때는 
+					// 옵션이 on이고 point가 4.0 이상인경우
+					if(option == null || point > 4.0) {
+					
 					
 				%>
 				<tr>
@@ -63,7 +66,8 @@
 					<td><%= store.get("name") %></td>
 					<td><%= store.get("point") %></td>
 				</tr>
-			<% } 
+			<% 		}
+				} 
 			} %>			
 			</tbody>
 		</table>
