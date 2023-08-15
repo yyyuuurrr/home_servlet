@@ -8,8 +8,7 @@
 </head>
 <body>
 	
-	div class="container">
-		
+	<div class="container">		
 		<h1>메뉴 검색</h1>
 		<form method="get" action="/JSP/test/test07.jsp">
 			<div class="d-flex col-4 p-0">

@@ -61,20 +61,20 @@
 	%>
 	
 	<div class="container">
-		<% for(Map<String, Object> book:list) { 
-			int bookid = (Integer)book.get("id");
-				if(id == bookid) {%>
-		<div class="d-flex">
-			<div>
-				<div><img src="<%= book.get("image") %>"></div>
-			</div>
+		<% for(Map<String, Object> book:list) {
+			int bookId = (Integer)book.get("id");
+			if(id == bookId) {
+			%>
+		<div class=d-flex>
+			<div><img src="<%= book.get("image") %>"></div>
 			<div class="ml-4">
 				<div class="display-1 font-weight-bold"><%= book.get("title") %></div>
 				<div class="display-2 text-info"><%= book.get("author") %></div>
 				<div class="display-4"><%= book.get("publisher") %></div>
-			</div>	
-		</div>		
-		<% } 
+			</div>
+		</div>
+		<% 
+			}
 		} %>
 	</div>
 

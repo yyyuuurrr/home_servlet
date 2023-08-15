@@ -61,10 +61,10 @@
 	
 	%>
 	
-	<div class="container">
-		<h1 class="text-center">책 목록</h1>
+		<div class="container">
+		<h1 class="text-center">책목록</h1>
 		
-		<table class="table">
+		<table class="table text-center">
 			<thead>
 				<tr>
 					<th>id</th>
@@ -72,17 +72,18 @@
 					<th>제목</th>
 				</tr>
 			</thead>
+			
 			<tbody>
 				<% for(Map<String, Object> book:list) { %>
-					<tr>
-						<td><%= book.get("id") %></td>
-						<td><img width="150" src="<%= book.get("image") %>"></td>
-						<td class="display-4"><a href="/JSP/test/test.08-detail.jsp?id=1000"><%= book.get("title") %></a></td>
-					</tr>	
-				<% } %>	
+				<tr>
+					<td><%= book.get("id") %></td>
+					<td><img width="150" src="<%= book.get("image")  %>"></td>
+					<td class="display-4"><a href="/JSP/test/test08-detail.jsp?id=<%= book.get("id") %>"><%= book.get("title") %></a></td>
+				</tr>
+				<% } %>
+			
 			</tbody>
 		</table>
-	
 	</div>
 	
 
